@@ -12,6 +12,8 @@ entered_dance = gets.chomp.downcase
       puts "    !>Invalid input, please try again"
     elsif dance_lib.include? entered_dance
       puts "    !>Duplicate dance detected, please try again"
+    elsif entered_dance.to_i != 0 || entered_dance == '0'
+      puts "You've entered a number, please try again"
     else
       puts "    Added to dance library"
       dance_lib.push(entered_dance)
