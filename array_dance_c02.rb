@@ -19,7 +19,7 @@ entered_dance = gets.chomp.downcase
 
 end
 
-def display_dance(dance_lib)
+def display_dance(dance_library)#Different array & parameter from above
 
   puts "\nYour added dance moves"
   dance_lib.each do |moves|
@@ -47,5 +47,5 @@ while exit_loop
     else
       puts "Invalid option, please try again"
     end
-    
+
 end
